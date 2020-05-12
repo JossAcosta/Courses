@@ -110,3 +110,17 @@ git push <nombre del repositorio remoto> <nombre de la rama local>
 ```
 ## Git ignore
 > Si tienes archivos que contengan datos confidenciales y no deseas mandarlos al repositorio remoto, solo debes crear un archivo con el nombre **.gitignore** y poner dentro de el o los nombres de los archivos / carpetas que deseas ignorar.
+
+## Templates
+* **Pasos para crear templates**
+  * Crear una **carpeta** en la raíz del proyecto con el nombre de **.github**.
+  * Dentro de la carpeta se alojarán los templates.
+  * Podemos crear templates para issues y pull request, estos a su vez pueden tener varios templates.
+  * Para alojar varios templates de PRs e issues, debemos crear una carpeta expecífica para cada uno:
+    * PRs:    .github/PULL_REQUEST_TEMPLATE/
+    * Issues: .github/ISSUE_TEMPLATE/
+  * Dentro de estas carpetas debes crear los templates (archivos markdown **.md**) de cada uno.
+  * La nomenclatura para el nombre del archivo del template del PR es la siguiente: **pull_request_template.md**
+  * Al finalizar tendrás algo parecido a esto:
+    **.github/PULL_REQUEST_TEMPLATE/pull_request_template.md**
+    **.github/ISSUE_TEMPLATE/***
